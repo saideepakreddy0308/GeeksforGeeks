@@ -1,8 +1,11 @@
 #User function Template for python3
 
 def rotate( arr, n):
-    arr[:] = arr[-1:] + arr[0:-1]
-    return arr
+    # arr.insert(0,arr[n-1])
+    # arr.pop()
+    
+    arr[:] = [arr[-1]] + arr[0:-1]
+    
 
 
 
