@@ -1,4 +1,4 @@
-<h2><a href="https://practice.geeksforgeeks.org/problems/maximum-value-in-a-bitonic-array3001/1?page=1&curated[]=8&sortBy=submissions">Bitonic Point</a></h2><h3>Difficulty Level : Easy</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size:18px">Given an array <strong>arr</strong>&nbsp;of<strong> n </strong>elements that&nbsp;is first strictly increasing and then maybe strictly decreasing,&nbsp;find the maximum element in the array.<br>
+<h2><a href="https://practice.geeksforgeeks.org/problems/maximum-value-in-a-bitonic-array3001/1?page=1&curated[]=8&sortBy=latest">Bitonic Point</a></h2><h3>Difficulty Level : Easy</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size:18px">Given an array <strong>arr</strong>&nbsp;of<strong> n </strong>elements that&nbsp;is first strictly increasing and then maybe strictly decreasing,&nbsp;find the maximum element in the array.<br>
 <strong>Note: </strong>If the array is increasing then just print the <strong>last element</strong> will be the maximum value.</span></p>
 
 <p><span style="font-size:18px"><strong>Example 1:</strong></span></p>
