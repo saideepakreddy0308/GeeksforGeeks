@@ -2,27 +2,24 @@
 
 class Solution:
     def productExceptSelf(self, nums, n):
-        #code here
-        mul=1
-        count0=0
+        p_nozero = 1
+        count_zero = 0
+        
         for i in nums:
-            if i!=0:
-                mul*=i
+            if i == 0:
+                count_zero += 1
             else:
-                count0+=1
-        if count0==0:
-            for i in range(n):
-                nums[i]=mul//nums[i]
-        elif count0==1:
-            for i in range(n):
-                if nums[i]!=0:
-                    nums[i]=0
-                else:
-                    nums[i]=mul
-        else:
-            for i in range(n):
-                nums[i]=0
-        return nums
+                p_nozero *= i
+        
+        result = []
+        for i in nums:
+            if i != 0:
+                result.append(0 if count_zero > 0 else p_nozero // i)
+            else:
+                result.append(p_nozero if count_zero == 1 else 0)
+        
+        return result
+
 
 #{ 
  # Driver Code Starts
