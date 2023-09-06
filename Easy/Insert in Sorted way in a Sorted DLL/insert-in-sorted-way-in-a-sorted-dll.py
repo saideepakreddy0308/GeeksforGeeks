@@ -12,26 +12,36 @@ def sortedInsert(head, x):
     #code here
     
     new_node = Node(x)
+    
+    # Case when list is empty
     if head is None:
-        head = new_node
         return new_node
     
-    if head.data > x:
+    # If node to be inserted at the beginning
+    if x < head.data:
         new_node.next = head
         head.prev = new_node
         return new_node
+    
+    # initialize temp to head
     temp = head
-    while temp.next != None:
-        if temp.next.data > x:
-            break
+    
+    # find the insertion point
+    while temp.next is not None and x > temp.next.data:
         temp = temp.next
+    
+    # Insert new node
     new_node.next = temp.next
-    if temp.next:
-        temp.next.prev = new_node
-    temp.next = new_node
     new_node.prev = temp
     
+    if temp.next is not None:
+        temp.next.prev = new_node
+    
+    temp.next = new_node
+    
     return head
+        
+
 
 #{ 
  # Driver Code Starts
